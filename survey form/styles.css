@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lumanosimo&family=Roboto&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #151515;
+    padding: 50px 10px;
+    font-family: 'Noto Sans', sans-serif;
+    color: aliceblue;
+}
+.main
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    border-radius: 20px;
+    background-color: #28272b;
+    box-shadow: 0 5px 20px 0 #0000002f;
+    padding: 10px;
+}
+@media only screen and (max-width: 600px) 
+{
+    .main
+    {
+        max-width: 380px;
+    }       
+}
+.main h1
+{
+    margin: 30px 0;
+    color: aliceblue;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+}
+.main h1 span
+{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.main h1 span span
+{
+    color: #e3ffe7;   
+}
+p
+{
+    text-align: center;
+    background: #151515;
+    padding: 10px;
+    color: #ffffffa2;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.main .item
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 20px 0px;
+    box-sizing: content-box;
+}
+.main .item.column
+{
+    flex-direction: row;
+}
+.main .item.column label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #000;
+    margin: 10px;
+    margin-left: 0;
+    height: 20px;
+    width: 30%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.main .item.column input
+{
+    position: relative;
+    height: 20px;
+    width: 55%;
+    background: #55535e;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.main .item label
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #000;
+    margin: 15px;
+    height: 20px;
+    width: 95%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.main .item select
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0;
+    height: auto;
+    width: 95%;
+    background: #55535e;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.main .item.role
+{
+    background: #36353a;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 20px;
+    margin: 10px;
+    height: auto;
+}
+.main .item.role label
+{
+    background: #00000000;
+    color: aliceblue;
+    margin: 5px;
+    height: auto;
+}
+.main .item.recommend
+{
+    background: #36353a;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 20px;
+    margin: 10px;
+    height: auto;
+}
+.main .item .recommend_title
+{
+    background: #00000000;
+    color: aliceblue;
+    margin: 5px;
+    height: auto;
+}
+.main .item.recommend input
+{
+    display: none;
+}
+.main .item.recommend label
+{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    transition: 0.5s;
+}
+.main .item.recommend .details
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.main .item.recommend .details label
+{
+    margin: 10px;
+}
+.main .item.recommend input:checked + label
+{
+    background: #00ff2a;
+    font-weight: 600;
+    color: #008d18;
+}
+.main .item.dropdown
+{
+    background: #36353a;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 20px;
+    margin: 20px 10px;
+    height: auto;
+}
+.main .item.dropdown label
+{
+    height: auto;
+    background: #00000000;
+    color: aliceblue;
+}
+.main .item.dropdown select
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0;
+    height: auto;
+    width: 95%;
+    background: #55535e;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.main .item.improved
+{
+    background: #36353a;
+    padding-top: 0;
+    border-radius: 20px;
+    height: auto;
+}
+.main .item.improved .details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main .item.improved label
+{
+    background: #00000000;
+    color: aliceblue;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    transition: 0.5s;
+}
+.main .item.improved input
+{
+    display: none;
+}
+.main .item.improved .details label
+{
+    margin: 10px;
+    padding: 5px;
+    background: #00000014;
+}
+.main .item.improved input:checked + label
+{
+    background: #00ff2a;
+    font-weight: 600;
+    color: #008d18;
+}
+.main .item.suggestions
+{
+    background: #36353a;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 20px;
+    margin: 10px;
+    height: auto;
+}
+.main .item.suggestions label
+{
+    background: #00000000;
+    color: aliceblue;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    transition: 0.5s;
+}
+.main .item.suggestions textarea
+{
+    position: relative;
+    height: auto;
+    min-height: 100px;
+    width: 90%;
+    background: #55535e;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    margin-bottom: 10px;
+}
+.main .submit_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main .submit_btn button
+{
+    background: #504d57;
+    border: 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    color: rgba(0, 0, 0, 0.393);
+    font-size: 1.3em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.main .submit_btn button:hover
+{
+    background: #00ff2a;
+    color: #008d18;
+    box-shadow: 0 0 20px 0 #00ff2ab5;
+}

@@ -1,0 +1,254 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #141414;
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+}
+#navbar
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: #2a2832;
+    padding: 5px;
+    box-shadow: 0 0 20px 0 #0000007e;
+}
+#navbar ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar ul li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 800;
+}
+#welcome-section
+{
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#welcome-section h1
+{
+    font-size: 3em;
+}
+#welcome-section p
+{
+    color: rgba(240, 248, 255, 0.594);
+}
+#projects
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#projects h2
+{
+    font-size: 2em;
+    margin: 30px 10px;
+}
+.projects-grid
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 800px) 
+{
+.project
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2a2832;
+    border-radius: 15px;
+    max-width: 170px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 5px;
+}
+.project img
+{
+    border-radius: 10px;
+}
+}
+@media only screen and (min-width: 800px) 
+{
+.project
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2a2832;
+    border-radius: 15px;
+    max-width: 300px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 5px;
+}
+.project img
+{
+    border-radius: 10px;
+}
+}
+img
+{
+    width: 100%;
+}
+a
+{
+    text-decoration: none;  
+}
+.project p
+{
+    text-align: center;
+    background: #141414;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+#projects .btn
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a2832;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px 70px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+#contact
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    background: #0c0c0c;
+    border-radius: 15px;
+}
+.contact-section-header
+{
+    margin: 10px;
+}
+.contact-links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 800px) 
+{
+    #contact a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+    font-weight: 900;
+    background: #2a2832;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}    
+#contact a p
+{
+    width: auto;
+  
+}
+#contact div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: auto;
+
+}
+}
+@media only screen and (min-width: 800px) 
+{
+    #contact a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(150, 150, 150);
+    font-size: 20px;
+    font-weight: 900;
+    background: #2a2832;
+    border-radius: 10px;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+}   
+#contact div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    height: auto;
+} 
+}
+
+a
+{
+    color: rgb(0, 136, 255);
+}
+footer
+{
+    margin: 10px;
+}
+#contact .icon
+{
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+}
